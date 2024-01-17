@@ -5,29 +5,25 @@ Hi, In this lesson you wil learn how to install your **`C++`** enviroment in Vis
 > [!WARNING]
 > VS Code is just a Code Editor, there are many options you can choose and some of them could be even better, you can use the enviroment you want.
 
-## Instructions:
-
-### VS Code:
+## VS Code:
 **1.** In this class we will be using [`VS Code`](https://code.visualstudio.com/Download) (Visual Studio Code), so the first step is to download it based on your OS.
 
 **2.** Once installed, please open the application.
-    At the side of the screen you will see a bar with various icons like this:
+    At the side of the screen you will see a bar with various icons like the ones in the image below, and select the one with the red square shown in the image.
 
 ![VS Code Icons](./images/VSCode%20Icons.png)
 
-    And select the one with the red square shown in the image.
-
 **3.** Now we should install a extension which will help us to process the language and have some help while programming.
-    1. In the search bar write `C++`, and some extension will be displayed just below.
-    2. Select the one that says `C/C++`. As shown in the image below.
-    3. Click on the `install` button.
+
+- In the search bar write `C++`, and some extension will be displayed just below.
+- Select the one that says `C/C++`. As shown in the image below.
+- Click on the `install` button.
 
 ![Extension Instalation](./images/Extension%20Instalation.png)
 
 **4.** Once you have it installed, you must close and reopen your `VS Code`.
 
-### Compiler:
-
+## Compiler:
 **1.** To be able to compile our programs we will need the corresponding compilers. We will be using `MSYS2` as compiler. Please download the installer in the next link [MSYS2 Installer](https://github.com/msys2/msys2-installer/releases/download/2023-05-26/msys2-x86_64-20230526.exe) and execute it.
 
 **2.** In the installer you can just click on all `Next`/ `Accept` buttons.
@@ -60,17 +56,13 @@ Hi, In this lesson you wil learn how to install your **`C++`** enviroment in Vis
 
 **4.** Once you the instalation end, we will need to edit our enviroment variables to be able to use the corresponding commands.
     
-    1. In the *Windows search bar*, type `Settings` to open your Windows Settings.
-    
-    2. Search for **`Edit environment variables`** for your account.
-    
-    3. In your **`User variables`**, select the **`Path`** variable (it must be in blue) and then select **`Edit`**.
-    ![Path](./images/Path.png)
-
-    4. Select `New` and add the MinGW-w64 destination folder you recorded during the installation process to the list. If you used the default settings above, then this will be the path: `C:\msys64\ucrt64\bin.`
-    ![Enviroment Variable](./images/EnviromentVariables.png)
-
-    5. Select `OK` to save the updated PATH. You will need to reopen any console windows for the new PATH location to be available
+- In the *Windows search bar*, type `Settings` to open your Windows Settings.
+- Search for **`Edit environment variables`** for your account.
+- In your **`User variables`**, select the **`Path`** variable (it must be in blue) and then select **`Edit`**.
+![Path](./images/Path.png)
+ - Select `New` and add the MinGW-w64 destination folder you recorded during the installation process to the list. If you used the default settings above, then this will be the path: `C:\msys64\ucrt64\bin.`
+ ![Enviroment Variable](./images/EnviromentVariables.png)
+- Select `OK` to save the updated PATH. You will need to reopen any console windows for the new PATH location to be available
 
 
 **5.** To check the correct instalation of our compiler please open a new terminal and paste the next commands.
