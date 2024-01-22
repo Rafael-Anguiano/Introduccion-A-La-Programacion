@@ -1,5 +1,39 @@
 # Instalation:
 
+## Languages
+1. [Español](#español)
+2. [English](#english)
+
+## Español:
+
+Hola, en esta lección aprenderás a instalar el ambiente necesario para utilizar `C++` en el editor de texto **"Visual Studio Code"**.
+
+> [!WARNING]
+> Visual Studio Code es solo un editor de texto, existen muchas opciones que puedes elegir, algunas incluso mejores, así que sientete libre de elegir el ambiente que más sea de tu agrado.
+
+## VS Code:
+**1.** Para comenzar a utilizar [`Visual Studio Code`](https://code.visualstudio.com/Download), es necesario instalarlo primeramente, por lo que te sugiero clickear en el link anterior y descargar el instalar basandonos en tu sistema operativo (Windows / macOS / Linux).
+
+**2.** Una vez descargado, por favor abre el instalador que se te ha descargado. Posteriormente puedes simplemente darle repetidas veces al botón de siguiente y aceptar.
+
+**3.** Al abrir la aplicación, encontrarás al lado izquierdo un panel con diferentes íconos como los mostrados en la imagen siguiente, por favor selecciona el ícono que está mostrado en la imagen de abajo con un recuadro rojo.
+
+![VS Code Icons](./images/VSCode%20Icons.png)
+
+**3.** Ahora haremos la instalación de la extensión que nos hará la vida más fácil a la hora de correr nuestro código.
+
+- En la barra de busqueda, escribe `C++`, algunas extensiones serán mostradas.
+- Selecciona la que diga `C/C++`. Como muestra en la imagen siguiente.
+- Haz click en el botón de `instalar`.
+
+![Extension Instalation](./images/Extension%20Instalation.png)
+
+**4.** Una vez que lo hayas instalado deberás cerrar y volver abrir `VS Code`.
+
+---
+
+## English:
+
 Hi, In this lesson you wil learn how to install your **`C++`** enviroment in Visual Studio Code.
 
 > [!WARNING]
