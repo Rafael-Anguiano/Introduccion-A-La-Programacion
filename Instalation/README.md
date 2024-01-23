@@ -1,10 +1,4 @@
-# Instalation:
-
-## Languages
-1. [Español](#español)
-2. [English](#english)
-
-## Español:
+# Instalación:
 
 Hola, en esta lección aprenderás a instalar el ambiente necesario para utilizar `C++` en el editor de texto **"Visual Studio Code"**.
 
@@ -30,76 +24,54 @@ Hola, en esta lección aprenderás a instalar el ambiente necesario para utiliza
 
 **4.** Una vez que lo hayas instalado deberás cerrar y volver abrir `VS Code`.
 
----
+## Compilador:
+**1.** Para ser capaces de correr nuestro código es importante instalar el compilador necesario, en este caso estaremos utilizando el instalador `MSYS2` como compilador. Por favor descarga dicho instalador [aquí](https://github.com/msys2/msys2-installer/releases/download/2023-05-26/msys2-x86_64-20230526.exe) y ejecútalo posteriormente.
 
-## English:
-
-Hi, In this lesson you wil learn how to install your **`C++`** enviroment in Visual Studio Code.
-
-> [!WARNING]
-> VS Code is just a Code Editor, there are many options you can choose and some of them could be even better, you can use the enviroment you want.
-
-## VS Code:
-**1.** In this class we will be using [`VS Code`](https://code.visualstudio.com/Download) (Visual Studio Code), so the first step is to download it based on your OS.
-
-**2.** Once installed, please open the application.
-    At the side of the screen you will see a bar with various icons like the ones in the image below, and select the one with the red square shown in the image.
-
-![VS Code Icons](./images/VSCode%20Icons.png)
-
-**3.** Now we should install a extension which will help us to process the language and have some help while programming.
-
-- In the search bar write `C++`, and some extension will be displayed just below.
-- Select the one that says `C/C++`. As shown in the image below.
-- Click on the `install` button.
-
-![Extension Instalation](./images/Extension%20Instalation.png)
-
-**4.** Once you have it installed, you must close and reopen your `VS Code`.
-
-## Compiler:
-**1.** To be able to compile our programs we will need the corresponding compilers. We will be using `MSYS2` as compiler. Please download the installer in the next link [MSYS2 Installer](https://github.com/msys2/msys2-installer/releases/download/2023-05-26/msys2-x86_64-20230526.exe) and execute it.
-
-**2.** In the installer you can just click on all `Next`/ `Accept` buttons.
+**2.** En el instalador tu solo necesitas hacer click en los botones de **"siguiente"** y **"Aceptar"**.
 > [!NOTE]
-> On the last you make sure to check the square to open the installer once is installed.
+> Asegurate de que al final el recuadro para abrir el programa esté marcado de forma positiva.
 >
-> If you didn´t check the square and clicked next. Search for the `MSYS2` app in computer.
+>  En caso de que no hayan marcado el recuadro busca dentro de tus programas `MSYS2`.
 
 
-**3.** In this terminal you should paste the next command.
+**3.** Verás que este programa ha abierto una termianl. Dentro de ella deberás pegar el siguiente comando.
 > [!TIP]
-> Note that you could have some problems using your keyboard to paste the command. 
+> Probablemente vayas a tener problemas para pegar el comando dentro de la terminal. 
 >
-> Instead of using your keyboard, use the right click of your mouse and then select paste. 
+> En este caso te sugiero que en lugar de utilizar el teclado para pegar, utilices el click derecho de tu mouse.
 
 ```sh
     pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
 ```
 
 > [!CAUTION]
-> The process will start, and at some point you will be asked to `Enter a selection`. In this part you should just **`Press Enter`**.
+> El proceso de instalación del compilador empezará, sin embargo serás preguntado varias cosas para continuar.
+>
+> En un punto la terminal te preguntará para `ingresar una selección`, en este caso solo será necesario **`Presionar Enter`**.
 >
 > ![Default Selection](./images/Default%20selection.png)
 
 > [!CAUTION]
-> Later you will be asked to proceed, please write **`Y`** and **`Press Enter`**
+> Posteriormente serás preguntado quieres proceder, en este caso utiliza tu teclado y escribe `Y` y `Presiona Enter`.
 >
 > ![Yes](./images/Yes.png)
 
 
-**4.** Once you the instalation end, we will need to edit our enviroment variables to be able to use the corresponding commands.
+**4.** Una vez que el proceso haya terminado, necesitaremos editar las variables de entorno para poder hacer uso de los comandos correspondientes.
     
-- In the *Windows search bar*, type `Settings` to open your Windows Settings.
-- Search for **`Edit environment variables`** for your account.
-- In your **`User variables`**, select the **`Path`** variable (it must be in blue) and then select **`Edit`**.
+- En tu buscador de Windows, busca: "Variables de Entorno".
+- Ahí encontrarás un programa con un texto parecido a "Editar Variables de Entorno"
+- Tendremos que buscar las variables de entorno **DE USUARIO**, seleccionaremos la variable **`Path`** y posteriormente seleccionaremos **`Edit`**.
 ![Path](./images/Path.png)
- - Select `New` and add the MinGW-w64 destination folder you recorded during the installation process to the list. If you used the default settings above, then this will be the path: `C:\msys64\ucrt64\bin.`
+ - Ahora presionaremos el botón para agregar una `Nueva Variable` y añadiremos el folder destino del compilador MinGW-w64 el cuál (en caso de no haber cambiado nada) será el siguiente:
+   ```sh
+       C:\msys64\ucrt64\bin.
+   ```
  ![Enviroment Variable](./images/EnviromentVariables.png)
-- Select `OK` to save the updated PATH. You will need to reopen any console windows for the new PATH location to be available
+- Presiona el botón de `Aceptar`. Para checar si fue correctamente instalado, deberás cerrar las terminales que tengas abiertas y reabrirlas.
+  
 
-
-**5.** To check the correct instalation of our compiler please open a new terminal and paste the next commands.
+**5.** Para checar si fue correctamente instalado, pega los siguientes comandos en tu terminal.
 
     ```sh
         gcc --version
@@ -107,5 +79,5 @@ Hi, In this lesson you wil learn how to install your **`C++`** enviroment in Vis
         gdb --version
     ```
 > [!NOTE]
-> You should see a some information displayed. 
-> If you see an error there is something wrong. Please raise your hand or send me a message, I´ll help you without a problem.
+> Deberás ver información correspondiente a las versiones de los comandos. 
+> Si por el contrario te apareció un error, o ves todo en rojo, de seguro hubo algún problema en la instalación. Levanta la mano y lo resolveremos sin problema. :) 
