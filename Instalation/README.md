@@ -65,7 +65,7 @@ Hola, en esta lección aprenderás a instalar el ambiente necesario para utiliza
 ![Path](./images/Path.png)
  - Ahora presionaremos el botón para agregar una `Nueva Variable` y añadiremos el folder destino del compilador MinGW-w64 el cuál (en caso de no haber cambiado nada) será el siguiente:
    ```sh
-       C:\msys64\ucrt64\bin.
+       C:\msys64\ucrt64\bin
    ```
  ![Enviroment Variable](./images/EnviromentVariables.png)
 - Presiona el botón de `Aceptar`. Para checar si fue correctamente instalado, deberás cerrar las terminales que tengas abiertas y reabrirlas.
