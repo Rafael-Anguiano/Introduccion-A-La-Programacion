@@ -33,7 +33,7 @@ Los operadores lógicos son utilizados para hacer comparaciones entre dos valore
     5 <= 5   // true
     10 <= 5  // false
     ```
-- Menor o igual (**>=**): Este operador lógico compara dos valores para saber si el valor de la izquierda es **mayor o igual** que el valor de la derecha, de ser así devolverá `true`, de lo contrario devolverá `false`
+- Mayor o igual (**>=**): Este operador lógico compara dos valores para saber si el valor de la izquierda es **mayor o igual** que el valor de la derecha, de ser así devolverá `true`, de lo contrario devolverá `false`
     ```cpp
     5 >= 10  // false
     5 >= 5   // true
