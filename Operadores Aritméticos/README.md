@@ -36,8 +36,8 @@ Los operadores aritméticos como su nombre lo dicen, son utilizados para hacer o
     float otherNumber = 10 - myNumber;
     float result = otherNumber - myNumber;
     ```
-    > [!TIP]
-    > Hay que tener en cuenta que el valor utilizado sea el adecuado para guardar el valor resultante de la división.
+> [!TIP]
+> Hay que tener en cuenta que el valor utilizado sea el adecuado para guardar el valor resultante de la división.
 
 - **Modulo o Residuo** (`%`): Este operador es utilizado para optener el residuo de una división entre valores o variables dentro de nuestro código.
 
